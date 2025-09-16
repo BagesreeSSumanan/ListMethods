@@ -6,7 +6,8 @@ for a, b in zip(list1, list2):
 
 # 2.Replace list’s item Python with .Net in the following list
 languages = ['Java', 'Python', 'JavaScript']
-languages[1] = ".Net"
+index = languages.index("Python")
+languages[index] = ".Net"
 print(languages)
 
 # 3.Remove all occurrences of a specific item from a list.
@@ -21,6 +22,10 @@ print(nested_list)
 
 # 5.Iterate through the following nested list using for loop and and print the elements
 L = [[1, 2, 3],[4, 5, 6],[7, 8, 9]]
+for item in L:
+    for value in item:
+        print(value)
+
 
 # 6.Given a list [10,23,40,[9,3,4],6,7].Print the first 2 elements of sublist at position 3
 Newlist = [10,23,40,[9,3,4],6,7]
